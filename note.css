@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #666;
+    text-align: center;
+}
+
+.container{
+    width: 90%;
+    min-height: 100vh;
+    border: 2px solid #9d9d9d;
+    margin-left: 100px;
+    box-shadow: 6px -6px 8px #9d9d9d,
+                -6px 6px 8px #ffffff;
+}
+
+.box .input{
+    height: 230px;
+    width: 60%;
+    border: 2px solid #999;
+    border-radius: 20px;
+    background: darkkhaki;
+    font-size: 30px;
+    font-weight: 300;
+    text-align: start;
+}
+
+/*.box .input{
+    background: inherit;
+    height: inherit;
+    width: 50%;
+    
+}*/
+
+.add{
+    font-size: 20px;
+    background: #000;
+    color: #fff;
+    padding: 16px;
+    cursor: pointer;
+    border: none;
+
+}
+
+.add:hover{
+    background: rgba(0,0,0,0.1);
+    color: white;
+    padding: 18px;
+}
+
+.del{
+    font-size: 16px;
+    background: #ff4412;
+    color: white;
+    padding: 6px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 25%;
+    opacity: 0;
+}
+
+.edit{
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 20%;
+    opacity: 0;
+}
+
+.note{
+    min-height: 120px;
+    width: 100%;
+    border-radius: 50px;
+    background: #fff;
+    position: relative;
+    margin-top: 90px;
+    text-align: center;
+}
+
+
+.taskName{
+    height: 90px;
+    margin-left: 40px;
+    width: 80%;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f1f1f1;
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 50px;
+    box-shadow: 6px -6px 8px #9d9d9d,
+                -6px 6px 8px #ffffff;
+}
+
+.taskName:hover .task{
+    filter: blur(5px);
+    
+}
+
+.taskName:hover .del{
+    opacity: 1;
+}
+
+.taskName:hover .edit{
+    opacity: 1;
+}
+
+.del:hover{
+    background: #f00;
+    color: #fff;
+}
+.edit:hover{
+    background: #111;
+    color: #fff;
+    
+}
